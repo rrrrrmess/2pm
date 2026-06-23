@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 2PM Concert "THE RETURN" in INCHEON 售票指南</title>
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #e31c5f; /* 2PM 璀璨玫瑰紅/熱情粉 */
+      --primary-light: #fff0f3;
+      --primary-glow: rgba(227, 28, 95, 0.15);
+      --secondary-color: #8b5cf6; /* 夢幻紫 */
+      --secondary-light: #f5f3ff;
+      --dark-color: #111827; /* 質感深灰黑 */
+      --dark-card: #1f2937;
+      --light-bg: #f9fafb;
+      --card-bg: #ffffff;
+      --border-color: #e5e7eb;
+      --text-main: #1f2937;
+      --text-sub: #4b5563;
+      --text-muted: #9ca3af;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #f7f8fa;
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    /* Concert Banner/Header */
+    .header-card {
+      background: linear-gradient(135deg, #111827 0%, #1e1b4b 100%);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      color: #ffffff;
+      margin-bottom: 30px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .header-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(227, 28, 95, 0.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(227, 28, 95, 0.2);
+      border: 1px solid var(--primary-color);
+      color: #ff5e97;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .header-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 20px;
+      background: linear-gradient(to right, #ffffff, #f3e8ff, #ffb6c1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+    }
+
+    .concert-info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 24px;
+      margin-top: 24px;
+    }
+
+    .info-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .info-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #f3f4f6;
+    }
+
+    /* Timezone Switcher */
+    .control-panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      background: var(--card-bg);
+      padding: 15px 25px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .panel-title {
+      font-size: 1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .timezone-switch {
+      display: flex;
+      background: #f3f4f6;
+      padding: 4px;
+      border-radius: 30px;
+      position: relative;
+    }
+
+    .timezone-btn {
+      border: none;
+      background: transparent;
+      padding: 8px 18px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-sub);
+      cursor: pointer;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .timezone-btn.active {
+      background: var(--primary-color);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(227, 28, 95, 0.3);
+    }
+
+    /* Main Table Container */
+    .table-container {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 30px;
+      border: 1px solid var(--border-color);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--dark-color);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 18px 24px;
+      letter-spacing: 0.5px;
+    }
+
+    th:first-child {
+      border-top-left-radius: var(--radius-lg);
+    }
+    th:last-child {
+      border-top-right-radius: var(--radius-lg);
+    }
+
+    tr {
+      border-bottom: 1px solid var(--border-color);
+      transition: background-color 0.2s ease;
+    }
+
+    tr:last-child {
+      border-bottom: none;
+    }
+
+    tr:hover {
+      background-color: #fafbfc;
+    }
+
+    td {
+      padding: 24px;
+      vertical-align: top;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    /* Specific Column Widths & Styles */
+    .col-stage {
+      font-weight: 700;
+      color: var(--primary-color);
+      width: 18%;
+    }
+
+    .stage-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.95rem;
+    }
+
+    .col-qual {
+      width: 22%;
+    }
+
+    .col-period {
+      width: 22%;
+    }
+
+    .col-result {
+      width: 13%;
+    }
+
+    .col-payment {
+      width: 13%;
+    }
+
+    .col-remarks {
+      width: 12%;
+    }
+
+    /* Bullet list style inside cells */
+    .cell-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .cell-list li {
+      position: relative;
+      padding-left: 12px;
+      margin-bottom: 6px;
+      font-size: 0.85rem;
+      color: var(--text-sub);
+    }
+
+    .cell-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    /* Date and Time formatting */
+    .datetime-box {
+      background: var(--light-bg);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      border-left: 3px solid var(--primary-color);
+      margin-bottom: 8px;
+    }
+
+    .datetime-box.secondary {
+      border-left-color: var(--secondary-color);
+    }
+
+    .date-text {
+      font-weight: 700;
+      color: var(--dark-color);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 2px;
+    }
+
+    .time-text {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      font-family: monospace;
+    }
+
+    /* Note Section ("妳要注意的" Style) */
+    .notes-card {
+      background: #fff5f7;
+      border: 1px solid #fcd3de;
+      border-radius: var(--radius-md);
+      display: flex;
+      margin-bottom: 30px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .notes-label {
+      background-color: var(--primary-color);
+      color: #ffffff;
+      padding: 24px;
+      font-weight: 800;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 140px;
+      flex-shrink: 0;
+      letter-spacing: 1px;
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+    }
+
+    .notes-content {
+      padding: 24px 30px;
+      flex-grow: 1;
+    }
+
+    .note-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      gap: 10px;
+    }
+
+    .note-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .note-icon {
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      line-height: 1;
+      margin-top: 2px;
+    }
+
+    .note-text {
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    .note-highlight {
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    /* Timeline Section ("最重要日期") */
+    .timeline-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 35px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+      margin-bottom: 30px;
+    }
+
+    .timeline-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .timeline-container {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 20px;
+      padding-bottom: 10px;
+    }
+
+    .timeline-line {
+      position: absolute;
+      top: 15px;
+      left: 5%;
+      right: 5%;
+      height: 4px;
+      background: #e5e7eb;
+      z-index: 1;
+    }
+
+    .timeline-progress {
+      position: absolute;
+      top: 15px;
+      left: 5%;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      z-index: 2;
+      transition: width 1s ease-in-out;
+    }
+
+    .timeline-node {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 15%;
+      text-align: center;
+      z-index: 3;
+    }
+
+    .timeline-dot {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 4px solid #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .timeline-node.active .timeline-dot {
+      border-color: var(--primary-color);
+      background: var(--primary-color);
+      color: #ffffff;
+      box-shadow: 0 0 10px var(--primary-glow);
+    }
+
+    .timeline-node.active.purple .timeline-dot {
+      border-color: var(--secondary-color);
+      background: var(--secondary-color);
+      color: #ffffff;
+    }
+
+    .timeline-date {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--dark-color);
+      margin-top: 12px;
+    }
+
+    .timeline-desc {
+      font-size: 0.75rem;
+      color: var(--text-sub);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    /* Utility Tools Box */
+    .utility-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .utility-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .utility-item {
+      background: var(--light-bg);
+      padding: 16px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .utility-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .utility-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-sub);
+    }
+
+    .utility-content {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--dark-color);
+      margin-top: 2px;
+    }
+
+    .copy-btn {
+      background: var(--primary-light);
+      border: 1px solid rgba(227, 28, 95, 0.3);
+      color: var(--primary-color);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .copy-btn:hover {
+      background: var(--primary-color);
+      color: #ffffff;
+    }
+
+    /* Footer text */
+    .footer-note {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* Responsive table for mobile */
+    @media (max-width: 900px) {
+      body {
+        padding: 20px 10px;
+      }
+
+      .header-card {
+        padding: 25px;
+      }
+
+      .header-title {
+        font-size: 1.7rem;
+      }
+
+      .control-panel {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+      }
+
+      .notes-card {
+        flex-direction: column;
+      }
+
+      .notes-label {
+        width: 100%;
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+        padding: 15px;
+      }
+
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      tr {
+        background: #ffffff;
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        margin-bottom: 20px;
+        box-shadow: var(--shadow-sm);
+        padding: 15px;
+      }
+
+      tr:hover {
+        background-color: #ffffff;
+      }
+
+      td {
+        border: none;
+        padding: 8px 0;
+        position: relative;
+        padding-left: 30%;
+        font-size: 0.85rem;
+      }
+
+      td::before {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 25%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: 700;
+        color: var(--text-sub);
+        font-size: 0.8rem;
+      }
+
+      td:nth-of-type(1)::before { content: "售票階段"; }
+      td:nth-of-type(2)::before { content: "申請資格"; }
+      td:nth-of-type(3)::before { content: "申請期間"; }
+      td:nth-of-type(4)::before { content: "結果公布"; }
+      td:nth-of-type(5)::before { content: "付款期限"; }
+      td:nth-of-type(6)::before { content: "備註"; }
+
+      td.col-stage, td.col-qual, td.col-period, td.col-result, td.col-payment, td.col-remarks {
+        width: 100%;
+      }
+
+      .datetime-box {
+        padding: 6px 8px;
+      }
+
+      .timeline-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+      }
+
+      .timeline-line {
+        left: 35px;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        height: 100%;
+      }
+
+      .timeline-progress {
+        left: 35px;
+        top: 0;
+        width: 4px;
+        height: 0%;
+        transition: height 1s ease-in-out;
+      }
+
+      .timeline-node {
+        flex-direction: row;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .timeline-date {
+        margin-top: 0;
+      }
+
+      .timeline-desc {
+        margin-top: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Concert Header -->
+    <div class="header-card">
+      <span class="header-badge">✦ OFFICIAL TICKET GUIDE</span>
+      <h1 class="header-title">2026 2PM Concert "THE RETURN" in INCHEON 售票指南</h1>
+      <p style="color: #cbd5e1; font-size: 0.95rem; max-width: 700px;">
+        2PM 時隔多日重返舞台！將於韓國仁川 INSPIRE ARENA 舉行 “THE RETURN” 演唱會。本指南將官方公告內容翻譯成中文，並彙整出詳細售票時間表與購票細節，助您順利搶票！
+      </p>
+      
+      <div class="concert-info-grid">
+        <div class="info-item">
+          <span class="info-label">演出日期 (DATE)</span>
+          <span class="info-value">2026.08.08 (六) 17:00<br>2026.08.09 (日) 16:00</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">演出場地 (VENUE)</span>
+          <span class="info-value">仁川 INSPIRE ARENA</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">票價 (PRICE)</span>
+          <span class="info-value">全場均一價 154,000 KRW<br><span style="font-size: 0.8rem; font-weight: normal; color: #94a3b8;">(含對號座與站席)</span></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">售票平台 (PLATFORM)</span>
+          <span class="info-value">NOL World (提供全球購票)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="control-panel">
+      <div class="panel-title">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="color: var(--primary-color)">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.4z"/>
+        </svg>
+        <span>時間顯示設定</span>
+      </div>
+      <div class="timezone-switch">
+        <button class="timezone-btn active" id="btn-kst" onclick="switchTimezone('kst')">韓國時間 (KST)</button>
+        <button class="timezone-btn" id="btn-cst" onclick="switchTimezone('cst')">台灣/北京時間 (CST)</button>
+      </div>
+    </div>
+
+    <!-- Main Schedule Table -->
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th class="col-stage">售票階段</th>
+            <th class="col-qual">申請資格</th>
+            <th class="col-period">申請期間</th>
+            <th class="col-result">結果公布</th>
+            <th class="col-payment">付款期限</th>
+            <th class="col-remarks">備註</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 1. 會員認證 -->
+          <tr>
+            <td class="col-stage">
+              <div class="stage-badge">
+                <span style="color: var(--primary-color)">✦</span>
+                <span>官方會員認證<br><span style="font-size: 0.75rem; font-weight: normal; color: var(--text-sub);">(預售必做)</span></span>
+              </div>
+            </td>
+            <td class="col-qual">
+              HOTTEST 第9期 會員<br>或 成員個人官方會員<br>
+              <span style="font-size: 0.8rem; color: var(--text-sub); display: block; margin-top: 4px;">
+                (JUN. K, Nichkhun, Wooyoung, Junho, Chansung 官方會員)
+              </span>
+            </td>
+            <td class="col-period">
+              <div class="datetime-box">
+                <div class="date-text">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span class="date-val" data-kst="06/30 (二)" data-cst="06/30 (二)">06/30 (二)</span>
+                </div>
+                <div class="time-text" data-kst="14:00 開啟" data-cst="13:00 開啟">14:00 開啟</div>
+              </div>
+              <div style="text-align: center; color: var(--text-muted); font-size: 0.8rem; margin: 4px 0;">~</div>
+              <div class="datetime-box">
+                <div class="date-text">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span class="date-val" data-kst="07/08 (三)" data-cst="07/08 (三)">07/08 (三)</span>
+                </div>
+                <div class="time-text" data-kst="23:59 截止" data-cst="22:59 截止">23:59 截止</div>
+              </div>
+            </td>
+            <td class="col-result" style="font-weight: 600; color: var(--success-color);">
+              即時認證
+            </td>
+            <td class="col-payment" style="color: var(--text-muted);">
+              —<br><span style="font-size: 0.75rem;">(此階段無須付款)</span>
+            </td>
+            <td class="col-remarks">
+              <ul class="cell-list">
+                <li>至 NOL World 網站認證</li>
+                <li>姓名與會員編號需與官方完全一致</li>
+                <li>限認證 1 個售票網帳號</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- 2. 會員預售 -->
+          <tr>
+            <td class="col-stage">
+              <div class="stage-badge">
+                <span style="color: var(--primary-color)">👑</span>
+                <span>官方會員預售<br><span style="font-size: 0.75rem; font-weight: normal; color: var(--text-sub);">(先到先得)</span></span>
+              </div>
+            </td>
+            <td class="col-qual">
+              已完成前述階段認證的<br>HOTTEST 9期與個人官方會員
+            </td>
+            <td class="col-period">
+              <div class="datetime-box">
+                <div class="date-text">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span class="date-val" data-kst="07/09 (四)" data-cst="07/09 (四)">07/09 (四)</span>
+                </div>
+                <div class="time-text" data-kst="20:00 ~ 23:59" data-cst="19:00 ~ 22:59">20:00 ~ 23:59</div>
+              </div>
+              <span style="font-size: 0.75rem; color: #ff5e97; font-weight: 600; display: block; margin-top: 4px;">
+                ⚠️ 僅開放 4 小時！
+              </span>
+            </td>
+            <td class="col-result" style="font-weight: 600;">
+              即時購票
+            </td>
+            <td class="col-payment">
+              <div style="font-weight: bold; color: var(--primary-color);">購票時即時扣款</div>
+              <span style="font-size: 0.75rem; color: var(--text-sub);">(不支援轉帳)</span>
+            </td>
+            <td class="col-remarks">
+              <ul class="cell-list">
+                <li>搶票制 (先搶先得)</li>
+                <li>每場限購 1 張</li>
+                <li>需使用已認證帳號</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- 3. 一般販售 -->
+          <tr>
+            <td class="col-stage">
+              <div class="stage-badge">
+                <span style="color: var(--secondary-color)">🛒</span>
+                <span>一般售票<br><span style="font-size: 0.75rem; font-weight: normal; color: var(--text-sub);">(公開發售)</span></span>
+              </div>
+            </td>
+            <td class="col-qual">
+              所有人<br><span style="font-size: 0.8rem; color: var(--text-sub);">(未加入會員亦可購買)</span>
+            </td>
+            <td class="col-period">
+              <div class="datetime-box secondary">
+                <div class="date-text" style="color: var(--secondary-color);">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span class="date-val" data-kst="07/10 (五)" data-cst="07/10 (五)">07/10 (五)</span>
+                </div>
+                <div class="time-text" data-kst="20:00 開賣" data-cst="19:00 開賣">20:00 開賣</div>
+              </div>
+            </td>
+            <td class="col-result" style="font-weight: 600;">
+              即時購票
+            </td>
+            <td class="col-payment">
+              <div style="font-weight: bold; color: var(--primary-color);">購票時即時扣款</div>
+              <span style="font-size: 0.75rem; color: var(--text-sub);">(不支援轉帳)</span>
+            </td>
+            <td class="col-remarks">
+              <ul class="cell-list">
+                <li>搶票制 (先搶先得)</li>
+                <li>每場限購 2 張<br>(含會員預售已購數量)</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- 4. 輪椅席預售 -->
+          <tr>
+            <td class="col-stage">
+              <div class="stage-badge">
+                <span style="color: var(--primary-color)">♿</span>
+                <span>輪椅席預售<br><span style="font-size: 0.75rem; font-weight: normal; color: var(--text-sub);">(會員認證)</span></span>
+              </div>
+            </td>
+            <td class="col-qual">
+              已認證之會員輪椅使用者<br>與 1 名同行者
+            </td>
+            <td class="col-period">
+              <div class="datetime-box">
+                <div class="date-text">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span class="date-val" data-kst="07/09 (四)" data-cst="07/09 (四)">07/09 (四)</span>
+                </div>
+                <div class="time-text" data-kst="10:00 ~ 17:59" data-cst="09:00 ~ 16:59">10:00 ~ 17:59</div>
+              </div>
+            </td>
+            <td class="col-result" style="font-weight: 600; color: var(--secondary-color);">
+              客服郵件受理
+            </td>
+            <td class="col-payment">
+              <span>依客服指示付款</span>
+            </td>
+            <td class="col-remarks">
+              <ul class="cell-list">
+                <li>需憑殘疾證/福利卡購票</li>
+                <li>限購票人本人使用，不可轉讓</li>
+                <li>僅提供無實體椅之輪椅空間</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- 5. 輪椅席一般 -->
+          <tr>
+            <td class="col-stage">
+              <div class="stage-badge">
+                <span style="color: var(--secondary-color)">♿</span>
+                <span>輪椅席一般<br><span style="font-size: 0.75rem; font-weight: normal; color: var(--text-sub);">(公開發售)</span></span>
+              </div>
+            </td>
+            <td class="col-qual">
+              大眾輪椅使用者與 1 名同行者
+            </td>
+            <td class="col-period">
+              <div class="datetime-box secondary">
+                <div class="date-text" style="color: var(--secondary-color);">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                  <span class="date-val" data-kst="07/10 (五)" data-cst="07/10 (五)">07/10 (五)</span>
+                </div>
+                <div class="time-text" data-kst="10:00 開賣" data-cst="09:00 開賣">10:00 開賣</div>
+              </div>
+            </td>
+            <td class="col-result" style="font-weight: 600; color: var(--secondary-color);">
+              客服郵件受理
+            </td>
+            <td class="col-payment">
+              <span>依客服指示付款</span>
+            </td>
+            <td class="col-remarks">
+              <ul class="cell-list">
+                <li>客服信箱受理</li>
+                <li>其他規定同預售輪椅席</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Important Notes -->
+    <div class="notes-card">
+      <div class="notes-label">妳要注意的</div>
+      <div class="notes-content">
+        <div class="note-item">
+          <span class="note-icon">👑</span>
+          <span class="note-text">
+            <span class="note-highlight">認證與購票語言頁面必須一致</span>：如果在「韓文頁面」進行會員認證，就只能在韓文購票頁面買票；如果在「全球/英文頁面」進行認證，則只能在全球頁面買票。
+          </span>
+        </div>
+        <div class="note-item">
+          <span class="note-icon">💳</span>
+          <span class="note-text">
+            <span class="note-highlight">限制即時付款（不開放銀行轉帳）</span>：為防止黃牛與不法門票交易，本次售票在購買時全面「無法選擇虛擬帳號/銀行轉帳」，必須在購票時完成信用卡/即時卡片扣款。
+          </span>
+        </div>
+        <div class="note-item">
+          <span class="note-icon">👤</span>
+          <span class="note-text">
+            <span class="note-highlight">限購票者本人觀看</span>：門票必須以實際入場觀賞者的姓名進行購買。演出當天將嚴格核對證件與名字，非本人將被拒絕入場。
+          </span>
+        </div>
+        <div class="note-item">
+          <span class="note-icon">🔒</span>
+          <span class="note-text">
+            <span class="note-highlight">認證不可修改或取消</span>：一個會員帳號只能與一個 NOL World 帳號綁定。一旦完成驗證，該資料無法變更、取消或再次使用。即使註銷 NOL World 帳號亦無法重新綁定。
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline Chart -->
+    <div class="timeline-card">
+      <div class="timeline-title">
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24" style="color: var(--primary-color)">
+          <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+        </svg>
+        <span>售票與演唱會時程軸</span>
+      </div>
+      
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div class="timeline-progress" id="timeline-progress-bar"></div>
+        
+        <div class="timeline-node active" onclick="highlightTimeline(0)">
+          <div class="timeline-dot">1</div>
+          <div class="timeline-date" id="t-date-1" data-kst="06/30 14:00" data-cst="06/30 13:00">06/30 14:00</div>
+          <div class="timeline-desc">會員認證開始</div>
+        </div>
+        
+        <div class="timeline-node" onclick="highlightTimeline(1)">
+          <div class="timeline-dot">2</div>
+          <div class="timeline-date" id="t-date-2" data-kst="07/08 23:59" data-cst="07/08 22:59">07/08 23:59</div>
+          <div class="timeline-desc">會員認證截止</div>
+        </div>
+        
+        <div class="timeline-node" onclick="highlightTimeline(2)">
+          <div class="timeline-dot">3</div>
+          <div class="timeline-date" id="t-date-3" data-kst="07/09 20:00" data-cst="07/09 19:00">07/09 20:00</div>
+          <div class="timeline-desc">會員預售 (4H)</div>
+        </div>
+        
+        <div class="timeline-node" onclick="highlightTimeline(3)">
+          <div class="timeline-dot">4</div>
+          <div class="timeline-date" id="t-date-4" data-kst="07/10 20:00" data-cst="07/10 19:00">07/10 20:00</div>
+          <div class="timeline-desc">一般售票開始</div>
+        </div>
+        
+        <div class="timeline-node purple" onclick="highlightTimeline(4)">
+          <div class="timeline-dot">5</div>
+          <div class="timeline-date" id="t-date-5" data-kst="08/08 17:00" data-cst="08/08 16:00">08/08 17:00</div>
+          <div class="timeline-desc">演唱會第一天</div>
+        </div>
+        
+        <div class="timeline-node purple" onclick="highlightTimeline(5)">
+          <div class="timeline-dot">6</div>
+          <div class="timeline-date" id="t-date-6" data-kst="08/09 16:00" data-cst="08/09 15:00">08/09 16:00</div>
+          <div class="timeline-desc">演唱會第二天</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Utilities -->
+    <div class="utility-card">
+      <div style="font-weight: 700; font-size: 1rem; margin-bottom: 15px; display: flex; align-items: center; gap: 8px;">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="color: var(--primary-color)">
+          <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+        </svg>
+        <span>快速複製資訊</span>
+      </div>
+      <div class="utility-grid">
+        <div class="utility-item">
+          <div class="utility-info">
+            <span class="utility-title">輪椅席預訂客服信箱</span>
+            <span class="utility-content">help.global@nol-universe.com</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('help.global@nol-universe.com', this)">複製</button>
+        </div>
+        <div class="utility-item">
+          <div class="utility-info">
+            <span class="utility-title">官方票價 (KRW)</span>
+            <span class="utility-content">154,000</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('154000', this)">複製</button>
+        </div>
+        <div class="utility-item">
+          <div class="utility-info">
+            <span class="utility-title">演出場地名稱</span>
+            <span class="utility-content">INSPIRE ARENA</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('INSPIRE ARENA', this)">複製</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-note">
+      <span>💕 以上時間皆為韓國時間 (KST)，本網頁提供切換台灣時間 (CST) 對照，實際以 2PM 官方及售票網站公告為準。</span>
+    </div>
+
+  </div>
+
+  <script>
+    // Timezone switching logic
+    function switchTimezone(tz) {
+      const isKST = tz === 'kst';
+      
+      // Update buttons style
+      document.getElementById('btn-kst').classList.toggle('active', isKST);
+      document.getElementById('btn-cst').classList.toggle('active', !isKST);
+      
+      // Update date cells in table
+      const dateVals = document.querySelectorAll('.date-val');
+      dateVals.forEach(el => {
+        el.textContent = isKST ? el.getAttribute('data-kst') : el.getAttribute('data-cst');
+      });
+      
+      const timeTexts = document.querySelectorAll('.time-text');
+      timeTexts.forEach(el => {
+        el.textContent = isKST ? el.getAttribute('data-kst') : el.getAttribute('data-cst');
+      });
+      
+      // Update timeline dates
+      const timelineDates = document.querySelectorAll('.timeline-date');
+      timelineDates.forEach(el => {
+        el.textContent = isKST ? el.getAttribute('data-kst') : el.getAttribute('data-cst');
+      });
+    }
+
+    // Interactive timeline highlighting
+    const timelineNodes = document.querySelectorAll('.timeline-node');
+    const progressBar = document.getElementById('timeline-progress-bar');
+    
+    function highlightTimeline(index) {
+      timelineNodes.forEach((node, idx) => {
+        if (idx <= index) {
+          node.classList.add('active');
+        } else {
+          node.classList.remove('active');
+        }
+      });
+      
+      // Calculate progress percentage
+      const totalNodes = timelineNodes.length;
+      let percentage = 0;
+      if (totalNodes > 1) {
+        percentage = (index / (totalNodes - 1)) * 90; // Limit within 90% for visual aesthetics
+      }
+      
+      // On mobile, the timeline is vertical, so we control the height
+      if (window.innerWidth <= 900) {
+        progressBar.style.width = '4px';
+        progressBar.style.height = (index / (totalNodes - 1) * 85) + '%';
+      } else {
+        progressBar.style.height = '4px';
+        progressBar.style.width = percentage + '%';
+      }
+    }
+
+    // Auto calculate initial timeline active based on mock current date (2026-06-23)
+    // Current date is before 6/30, so only step 1 is active, or we default highlight step 1
+    highlightTimeline(0);
+
+    // Responsive timeline handling on resize
+    window.addEventListener('resize', () => {
+      // Re-trigger highlight to adjust width/height properly
+      const activeCount = document.querySelectorAll('.timeline-node.active').length;
+      if (activeCount > 0) {
+        highlightTimeline(activeCount - 1);
+      }
+    });
+
+    // Copy text tool
+    function copyText(text, btn) {
+      navigator.clipboard.writeText(text).then(() => {
+        const originalText = btn.textContent;
+        btn.textContent = '已複製!';
+        btn.style.background = '#06c755';
+        btn.style.color = '#ffffff';
+        btn.style.borderColor = '#06c755';
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.style.color = '';
+          btn.style.borderColor = '';
+        }, 1500);
+      }).catch(err => {
+        console.error('複製失敗:', err);
+      });
+    }
+  </script>
+</body>
+</html>
